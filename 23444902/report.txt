@@ -1,0 +1,54 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<9>>>
+
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Ring Buffer): I had a supplemental instructor guide me on how
+   to start the create function. Aside from the rb array with the four diff-
+   erent element, I realized I needed to create another array called buffer,
+   which would be inside the rb array. After that, I did the capacity and size
+   functions by returning what the instructions said (I also learned that the
+   two were different in that capacity consists of all of the elements in the
+   array, whereas size is the number of actual values/items). For the is_empty
+   and is_full functions, I utilized if-else statements to compare the values
+   and returned a boolean. For enqueue, I assigned buff[last] to x, and added
+   it to the end of rb. For dequeue, I assigned v to buff[first] and delete
+   and return item from the front of the buffer rb. For the peek function, I
+   returned the item from the front of the buffer rb.
+
+   Problem 2 (Guitar String): For the create function, I created a variable N
+   of with constant SPS divided by frequency, rounded up to the nearest int.
+   I made a ring buffer rb with N elements, and enqueued them with values 0.0,
+   and returned rb. The next function create_from_samples was straightforward -
+   I created a ring buffer with the length of init elements, and returned rb.
+   For the pluck function, I used the enqueue and dequeue functions. For the
+   tic function I set 'a' as the enqueue function and 'b' as as the peek
+   function. I used the enqueue function and implemented the expression given
+   in the question. In the sample function, I peeked and returned the string.
+
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   Laura Chamberlain SI Helped me understand the concept of a ring buffer in
+                        Problem 1 and how to set up the array.
+   Tengpeng Li TA for discussions Walked the class through the exercises
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+    This was a challenging yet enjoyable assignment to do because this was
+    the first time a visual client and it was pretty cool to play around
+    with. I am eager and excited to see what other projects we will be
+    working on in the future.
